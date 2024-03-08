@@ -2,18 +2,18 @@ function menu(){
     clear
     echo "Install i3"
     echo "[+] I3 WM [+]"
-    echo "1) Arch Linux"
+    echo "1 Arch Linux"
     echo ""
-    echo "2) Debian / Ubuntu"
+    echo "2 Debian / Ubuntu"
     echo ""
     echo "By redghost"
     echo ""
-    echo "read -p "Select: " $opt
+    read -p "Select: " $opt
 
     if [ $opt = 1 ]; then
         arch
     elif [ $opt = 2 ]; then
-        debian
+        debian()
     fi
 }
 
