@@ -38,12 +38,12 @@ function arch(){
     clear
     unzip polybar.zip
     echo "copying configuration"
-    sudo rm -rf $HOME/.config/i3  
-    cp -r i3 $HOME/.config/
-    rm -rf $HOME/.config/polybar
-    cp -r polybar $HOME/.config
-    rm -rf $HOME/.config/kitty
-    cp -r kitty $HOME/.config
+    sudo rm -rf ~/.config/i3
+    cp -r i3 ~/.config/
+    rm -rf ~/.config/polybar
+    cp -r polybar ~/.config
+    rm -rf ~/.config/kitty
+    cp -r kitty ~/.config
     sleep 1
     clear
 }
@@ -66,12 +66,11 @@ function debian(){
     clear
     unzip polybar.zip
     echo "copying configuration"
-    sudo rm -rf $HOME/.config/i3  
-    cp -r i3 $HOME/.config/
-    rm -rf $HOME/.config/polybar
-    cp -r polybar $HOME/.config
-    rm -rf $HOME/.config/kitty
-    cp -r kitty $HOME/.config
+    cp -r i3 ~/.config/
+    rm -rf ~/.config/polybar
+    cp -r polybar ~/.config
+    rm -rf ~/.config/kitty
+    cp -r kitty ~/.config
     sleep 1
     clear
 }
