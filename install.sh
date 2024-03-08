@@ -1,5 +1,6 @@
 function menu(){
     clear
+    echo "Install i3"
     echo "[+] I3 WM [+]"
     echo "1 Arch Linux"
     echo ""
@@ -7,15 +8,17 @@ function menu(){
     echo ""
     echo "By redghost"
     echo ""
-    read -p "Select: " $opt
+    read -p "Select: " opt
 
-    if [ $opt = 1 ]; then
+    if [ "$opt" = "1" ]; then
         arch
-    elif [ $opt = 2 ]; then
+    elif [ "$opt" = "2" ]; then
         debian
+    else
+        echo "Invalid option or no option selected. Exiting."
+        exit 1
     fi
 }
-
 
 function arch(){
     clear
@@ -43,7 +46,6 @@ function arch(){
     cp -r kitty $HOME/.config
     sleep 1
     clear
-
 }
 
 function debian(){
@@ -72,7 +74,6 @@ function debian(){
     cp -r kitty $HOME/.config
     sleep 1
     clear
-
 }
 
 menu
