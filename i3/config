@@ -41,10 +41,10 @@ bindsym $mod+q kill
 # defined in .desktop file, with their description, and corresponding
 # icons
 #bindsym $mod+d exec --no-startup-id rofi -show drun -theme Monokai -icon-theme "Tela-circle" -show-icons
-bindsym $mod+d exec --no-startup-id sh .config/polybar/shapes/scripts/launcher.sh
+bindsym $mod+d exec --no-startup-id sh ~/.config/polybar/panels/scripts/launcher.sh --gnome
 # The other mode search for applications in /usr/bin or /usr/sbin.
 # This should only be used if a program lacks a .desktop file.
-bindsym $mod+Shift+d exec --no-startup-id rofi -show run -theme Monokai
+#bindsym $mod+d exec --no-startup-id rofi -show run -themes 
 
 # Launch Polybar. Take a look at ~/.confi/polybar/config to
 # configure the bar.
@@ -255,7 +255,7 @@ bindsym $mod+r mode "resize"
 # touching program launcher. Assign Programs to respective
 # workspaces.
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0 #F9FAF9
 
 default_border pixel 2
 
