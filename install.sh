@@ -36,7 +36,9 @@ function arch(){
     clear
     echo "copying configuration"
     sudo rm -rf $HOME/.config/i3  
-    cp -r i3 $HOME/.config/')
+    cp -r i3 $HOME/.config/
+    rm -rf $HOME/.config/polybar
+    cp -r polybar $HOME/.config
     sleep 1
     clear
 
@@ -60,7 +62,9 @@ function debian(){
     clear
     echo "copying configuration"
     sudo rm -rf $HOME/.config/i3  
-    cp -r i3 $HOME/.config/')
+    cp -r i3 $HOME/.config/
+    rm -rf $HOME/.config/polybar
+    cp -r polybar $HOME/.config
     sleep 1
     clear
 
