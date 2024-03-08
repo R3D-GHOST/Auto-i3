@@ -1,6 +1,5 @@
 function menu(){
     clear
-    echo "Install i3"
     echo "[+] I3 WM [+]"
     echo "1 Arch Linux"
     echo ""
@@ -13,7 +12,7 @@ function menu(){
     if [ $opt = 1 ]; then
         arch
     elif [ $opt = 2 ]; then
-        debian()
+        debian
     fi
 }
 
