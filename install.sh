@@ -64,7 +64,7 @@ function debian(){
     bash setup.sh
     clear
     unzip polybar.zip
-    echo "copying configuration"ººººº
+    echo "copying configuration"
     sudo rm -rf $HOME/.config/i3  
     cp -r i3 $HOME/.config/
     rm -rf $HOME/.config/polybar
