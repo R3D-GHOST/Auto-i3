@@ -1,2 +1,0 @@
-polybar custom by redghost
-
