@@ -28,10 +28,6 @@ function arch(){
     sudo pacman -Sy picom feh polybar rofi kitty unzip
     clear
     echo "Config Polybar"
-    git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
-    cd polybar-themes
-    chmod +x setup.sh
-    clear
     echo "recommended option Simple"
     sleep 2
     bash setup.sh
@@ -56,9 +52,6 @@ function debian(){
     sudo apt install picom feh polybar rofi kitty unzip
     clear
     echo "Config Polybar"
-    git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
-    cd polybar-themes
-    chmod +x setup.sh
     clear
     echo "recommended option Simple"
     sleep 2
