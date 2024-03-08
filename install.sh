@@ -41,8 +41,6 @@ function arch(){
     echo "copying configuration"
     sudo rm -rf ~/.config/i3
     cp -r i3 ~/.config/
-    rm -rf ~/.config/polybar
-    cp -r polybar ~/.config
     rm -rf ~/.config/kitty
     cp -r kitty ~/.config
     sleep 1
@@ -69,8 +67,6 @@ function debian(){
     unzip polybar.zip
     echo "copying configuration"
     cp -r i3 ~/.config/
-    rm -rf ~/.config/polybar
-    cp -r polybar ~/.config
     rm -rf ~/.config/kitty
     cp -r kitty ~/.config
     sleep 1
